@@ -47,6 +47,7 @@ export default function Home() {
           >
             Read our docs
           </a>
+          <CustomComponent title="Custom Component" desc="This is a custom component." />
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
@@ -99,3 +100,17 @@ export default function Home() {
     </div>
   );
 }
+
+type CustomComponentProps = {
+  title: string;
+  desc: string;
+};
+
+const CustomComponent = ({ title, desc }: CustomComponentProps) => {
+  return (
+    <div>
+      <h1>{title}</h1>
+      {/* <p>{desc}</p> */}
+    </div>
+  );
+};
