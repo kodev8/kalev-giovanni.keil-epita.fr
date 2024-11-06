@@ -110,7 +110,7 @@ const CustomComponent = ({ title, desc }: CustomComponentProps) => {
   return (
     <div>
       <h1>{title}</h1>
-      {/* <p>{desc}</p> */}
+      <p>{desc}</p>
     </div>
   );
 };
